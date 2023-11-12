@@ -9,7 +9,9 @@ int main(){
   int arr2[n];
   for(int a = 0; a < n; ++a){
       cin >> arr1[a];
-      cin >> arr2[a];
+  }
+  for(int b = 0; b < n; ++b){
+      cin >> arr2[b];
   }
 
   sort(arr1,arr1+n, greater<int>());
