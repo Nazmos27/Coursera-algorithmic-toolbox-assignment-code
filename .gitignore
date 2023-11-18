@@ -1,0 +1,3 @@
+# Ignore all files except .cpp files
+.exe
+.o
