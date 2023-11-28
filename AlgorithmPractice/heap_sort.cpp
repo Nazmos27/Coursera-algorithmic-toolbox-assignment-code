@@ -57,7 +57,13 @@ void heapSort(int arr[], int N)
 	}
 }
 
-
+// A utility function to print array of size n
+void printArray(int arr[], int N)
+{
+	for (int i = 0; i < N; ++i)
+		cout << arr[i] << " ";
+	cout << "\n";
+}
 
 // Driver's code
 int main()
