@@ -37,6 +37,27 @@ void heapify(int arr[], int N, int i)
 	}
 }
 
+// Main function to do heap sort
+void heapSort(int arr[], int N)
+{
+
+	// Build heap (rearrange array)
+	for (int i = N / 2 - 1; i >= 0; i--)
+		heapify(arr, N, i);
+
+	// One by one extract an element
+	// from heap
+	for (int i = N - 1; i > 0; i--) {
+
+		// Move current root to end
+		swap(arr[0], arr[i]);
+
+		// call max heapify on the reduced heap
+		heapify(arr, i, 0);
+	}
+}
+
+
 
 // Driver's code
 int main()
