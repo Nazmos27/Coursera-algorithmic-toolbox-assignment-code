@@ -28,6 +28,15 @@ void heapify(int arr[], int N, int i)
 		largest = r;
 
 	// If largest is not root
+	if (largest != i) {
+		swap(arr[i], arr[largest]);
+
+		// Recursively heapify the affected
+		// sub-tree
+		heapify(arr, N, largest);
+	}
+}
+
 
 // Driver's code
 int main()
